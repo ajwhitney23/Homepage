@@ -19,6 +19,14 @@
        {
           "name":"Material Colors",
           "url":"http://materialuicolors.co/"
+       },
+       {
+          "name":"Youtube",
+          "url":"https://www.youtube.com/"
+       },
+       {
+          "name":"Reddit",
+          "url":"https://www.reddit.com/"
        }
     ]
 } 
