@@ -1,6 +1,10 @@
 {
     "links":[
        {
+          "name":"Google",
+          "url":"https://google.com"
+       },
+       {
           "name":"Canvas",
           "url":"https://canvas.wpi.edu/"
        },
