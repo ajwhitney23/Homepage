@@ -1,14 +1,15 @@
 body {
-    background-color: black;
+    background-color: #212121;
     justify-content: center;
     white-space: pre-wrap;
 }
 
-.container {
+#container {
     margin: auto;
     color: #B0BEC5;
-    width: 80%;
-    padding: 10px;
+    padding: 50px;
+    padding-left: 25%;
+    width: 50%;
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
 }
@@ -16,4 +17,6 @@ body {
 a {
     text-decoration: none;
     color: #B0BEC5;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
