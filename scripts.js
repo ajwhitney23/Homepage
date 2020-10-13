@@ -1,6 +1,6 @@
 function readJSON(file) {
     fetch(file)
-        .then(response => {return response.json()})
+        .then(response => { return response.json() })
         .then(jsonData => {
             createGroups(jsonData);
         })
@@ -10,18 +10,25 @@ function createGroups(data) {
     var groups = data.groups;
     div = document.getElementById("container");
     groups.forEach(element => {
+        group = document.createElement("div");
+        group.classList.add("group");
         groupName = element.groupName + " : {";
-        addText(groupName);
-        createLinks(element.children);
-        addText("}");
+        p = document.createElement("p");
+        p.textContent = groupName;
+        group.appendChild(p);
+        createLinks(element.children, group);
+        p = document.createElement("p");
+        p.textContent = "}";
+        group.appendChild(p);
+
+        div.appendChild(group);
     });
 
 }
 
-function createLinks(data) {
+function createLinks(data, group) {
     console.log(data);
-    div = document.getElementById("container");
-    for(i = 0; i < data.length; i++) {
+    for (i = 0; i < data.length; i++) {
         linkName = "\t" + data[i].name + "\n";
         linkURL = data[i].url;
 
@@ -32,7 +39,7 @@ function createLinks(data) {
         a.setAttribute('target', '_blank');
         a.textContent = linkName;
 
-        div.appendChild(a);
+        group.appendChild(a);
     }
 
 }
