@@ -2,17 +2,28 @@ function readJSON(file) {
     fetch(file)
         .then(response => {return response.json()})
         .then(jsonData => {
-            createLinks(jsonData);
+            createGroups(jsonData);
         })
+}
+
+function createGroups(data) {
+    var groups = data.groups;
+    div = document.getElementById("container");
+    groups.forEach(element => {
+        groupName = element.groupName + " : {";
+        addText(groupName);
+        createLinks(element.children);
+        addText("}");
+    });
+
 }
 
 function createLinks(data) {
     console.log(data);
-    var links = data.links;
     div = document.getElementById("container");
-    for(i = 0; i < links.length; i++) {
-        linkName = "\t" + links[i].name + "\n";
-        linkURL = links[i].url;
+    for(i = 0; i < data.length; i++) {
+        linkName = "\t" + data[i].name + "\n";
+        linkURL = data[i].url;
 
         a = document.createElement("a");
         ref = document.createAttribute("href");
@@ -23,7 +34,7 @@ function createLinks(data) {
 
         div.appendChild(a);
     }
-    addText(closingText);
+   // addText(closingText);
     // js way???
     // div = document.getElementById("container");
     // links.forEach(element => {
@@ -55,6 +66,6 @@ function addText(text) {
 
 
 function initBookmarks() {
-    addText(openingText);
+    //addText(openingText);
     readJSON("bookmarks.json");
 }

@@ -1,36 +1,46 @@
 {
-    "links":[
+    "groups":[
+       { "groupName":"School", "children": [
+         {
+            "name":"Canvas",
+            "url":"https://canvas.wpi.edu/"
+         },
+         {
+            "name":"BannerWeb",
+            "url":"https://bannerweb.wpi.edu/pls/prod/twbkwbis.P_WWWLogin"
+         },
+         {
+            "name":"GDrive",
+            "url":"https://drive.google.com/drive/u/0/folders/1HY-JTtnYLUlao4ZZQiu1Szhr_v-nH2jL"
+         }
+       ]},
        {
-          "name":"Google",
-          "url":"https://google.com"
+          "groupName":"Development", "children": [
+            {
+               "name":"Github",
+               "url":"https://github.com"
+            },
+            {
+               "name":"Material Colors",
+               "url":"http://materialuicolors.co/"
+            }
+          ]
        },
        {
-          "name":"Canvas",
-          "url":"https://canvas.wpi.edu/"
-       },
-       {
-          "name":"BannerWeb",
-          "url":"https://bannerweb.wpi.edu/pls/prod/twbkwbis.P_WWWLogin"
-       },
-       {
-          "name":"Github",
-          "url":"https://github.com"
-       },
-       {
-          "name":"GDrive",
-          "url":"https://drive.google.com/drive/u/0/folders/1HY-JTtnYLUlao4ZZQiu1Szhr_v-nH2jL"
-       },
-       {
-          "name":"Material Colors",
-          "url":"http://materialuicolors.co/"
-       },
-       {
-          "name":"Youtube",
-          "url":"https://www.youtube.com/"
-       },
-       {
-          "name":"Reddit",
-          "url":"https://www.reddit.com/"
-       }
+          "groupName":"Other", "children": [
+            {
+               "name":"Google",
+               "url":"https://google.com"
+            },
+            {
+               "name":"Youtube",
+               "url":"https://www.youtube.com/"
+            },
+            {
+               "name":"Reddit",
+               "url":"https://www.reddit.com/"
+            }
+          ]
+      }
     ]
 } 
