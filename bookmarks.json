@@ -21,6 +21,10 @@
                "url":"https://github.com"
             },
             {
+               "name":"Gitlab",
+               "url":"https://gitlab.com/"
+            },
+            {
                "name":"Material Colors",
                "url":"http://materialuicolors.co/"
             }
