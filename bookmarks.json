@@ -6,12 +6,22 @@
             "url":"https://canvas.wpi.edu/"
          },
          {
-            "name":"BannerWeb",
-            "url":"https://bannerweb.wpi.edu/pls/prod/twbkwbis.P_WWWLogin"
-         },
-         {
             "name":"GDrive",
             "url":"https://drive.google.com/drive/u/0/folders/1HY-JTtnYLUlao4ZZQiu1Szhr_v-nH2jL"
+         },
+         {
+            "name":"Webware",
+            "url":"https://cs4241-21a.github.io/"
+         }
+       ]},
+       { "groupName":"7Factor MQP", "children": [
+         {
+            "name":"7Factor Home",
+            "url":"https://github.com/orgs/7Factor/dashboard"
+         },
+         {
+            "name":"Terraform Docs",
+            "url":"https://www.terraform.io/docs/index.html"
          }
        ]},
        {

@@ -20,7 +20,7 @@ function createGroups(data) {
         p = document.createElement("p");
         p.textContent = "}";
         group.appendChild(p);
-
+        
         div.appendChild(group);
     });
 
